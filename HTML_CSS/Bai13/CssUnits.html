@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+    <link rel="stylesheet" href="main.css">
+    <style> 
+        html {
+            font-size: 30px;
+        }
+        /* h1{
+            font-size: 1rem;
+        } */
+        h1 {
+            font-size: 2em;
+        }
+        .box{
+            background-color: forestgreen;
+            width: 1vw;
+            height: 1vw;
+        }
+        /* 
+            1 vw hay 1 vh = 1$ độ rộng (ngang), dọc (dài)
+        */
+        /* 
+        1 rem = 16px
+        Sử dụng rem sẽ tốt hơn sử dụng em
+         */
+
+        /* 
+            vw - width; vh - height
+            viewport
+
+            Khung nhinf hay độ rộng của trình duyệt
+        */
+    </style>
+</head>
+
+<body>
+    <div style="font-size: 20px;">
+        <h1>Css Units là gì ?</h1>
+        <p>Css Units hiểu đơn giản là đơn vị sử dụng trong Css giúp tuỳ chỉnh kích thước của những đối tượng hiển thị
+            trên website</p>
+        <h2>1. Absolute units</h2>
+        <p>Đơn vị tuyệt đối</p>
+        <ul>
+            <li>px</li>
+            <!-- px hay pixel -->
+            <li>pt</li>
+            <li>cm</li>
+            <li>mm</li>
+            <li>inch</li>
+            <li>pc</li>
+        </ul>
+
+        <h2>2. Relative units ?</h2>
+        <p>Đơn vị tuơng đối</p>
+        <ul>
+            <li>%</li>
+            <li>rem</li>
+            <li>em</li>
+            <li>vw</li>
+            <li>vh</li>
+            <li>vmin</li>
+            <li>vmax</li>
+            <li>ex</li>
+            <li>ch</li>
+        </ul>
+
+        <h3>Những đơn vị thường được sử dụng nhiều nhất</h3>
+        <ol>
+            <h3>Absolute</h3>
+            <li>px</li>
+            <br>
+            <h3>Relatives</h3>
+            <li>%</li>
+            <li>rem</li>
+            <li>em</li>
+            <li>vw</li>
+            <li>vh</li>
+        </ol>
+
+        <div class="box">
+            <!-- Đặc tính của giá trị px trong nhóm thuộc tính Absolute
+            là khi ta định nghĩa , thì kích thước sẽ cố định 
+            và sẽ không bị các yếu tố khác xung quanh tác động lên làm thay đổi giá trị bên trong do ta định nghĩa . -->
+        </div>
+        <br> 
+        <table border="1">
+            <thead>
+                <th>Absolute</th>
+                <th>Relatives</th>
+            </thead>
+                
+
+            <tbody>
+                <tr>
+                    <td>px</td>
+                    <td>%</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>rem</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>em</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>vw</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>vh</td>
+                </tr>
+            </tbody>
+
+            
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+.box1 {
+    background-color: green;
+
+    border: 10px solid yellowgreen;
+    
+
+}
+
+.box2 {
+    background-color: orange;
+    border: 10px solid gray;
+    margin-right:160px ;
+    
+}
+
+.box3 {
+    background-color: violet;
+
+    border: 10px teal;
+    border-style: groove ;
+    margin: 10px 20px 10px 40px;
+    
+}
+
+.box {
+    width: 60px;
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+
+}
+
+/* 
+    border-width: độ dày của border;
+    border-style: solid cos border = 2px
+
+    CÁCH VIẾT DÀI:
+    border-top-width:100px ;
+    border-right-width:100px ;
+    border-left-width: 100px;
+    border-bottom-width:100px ;
+
+    CÁCH VIẾT NGẮN:
+    border: 50px solid #333;
+    thành phần: kích thước kiểu màu;
+
+     
+*/
+/* 
+    Thuộc tính float có tác dụng đẩy phần tử sang bên trái hoặc sang bên phải
+*/
+/* 
+    Cả border và padding đều làm tăng tổng kích thước của elements
+*/

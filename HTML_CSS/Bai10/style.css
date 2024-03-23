@@ -1,0 +1,19 @@
+h1 {
+    color: orange;
+}
+/* 
+    Selec tới ID  Sử dụng #
+ */
+ #first-heading {
+    color: blue;
+ }
+ #second-heading {
+    color: green;
+ }
+
+ /* 
+    Selec tới Classs  Sử dụng .
+ */
+ .first-heading {
+    color: blueviolet;
+ }

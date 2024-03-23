@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS in HTML</title>
+    <!-- <link rel="stylesheet" href="CSS/style.css"> (1)-->
+     <!-- Viết css trong thẻ style đặt ở dưới thẻ head (2)-->
+     <style>
+        /* h1{
+            color: red
+        } */
+        /* Kết thúc cặp thuộc tính sử dụng dấu ; */
+     </style>
+</head>
+<body>
+    <h1 style="color: red;font-size:20px ;">Css in HTML</h1>
+    <!-- (3) -->
+    <ul>
+        <li>Là thẻ danh sách có dấu chấm ở đầu</li>
+    </ul>
+    <ol>
+        <li>Là thẻ danh sách nhưng ở đầu là số</li>
+    </ol>
+    
+    <p>Có 3 cách sử dụng CSS vào HTML là </p>
+    <ol>
+        <li>Internal</li>
+        <li>External</li>
+        <li>Inline</li>
+    </ol>
+
+    <!-- Thứ 1 là Internal, tức là sử dụng cặp thẻ style để viết 
+    CSS trong chính file HTML .
+    -->
+    <!-- Thứ 2 là External, đây là cách liên kết (link) file CSS với file HTML 
+    sử dụng link href.
+
+    Mẹo: Sử dụng Devtools -> Chuột phải vào Inspect -> Chọn Source để biết đã thêm đường dẫn thành công hay chưa.
+    Nếu chưa sẽ báo lỗi và ko hiện lên file mình muốn liên kết .
+    -->
+
+    <!-- Thứ 3 là Inline(dòng) , tức là viết luôn thuộc tính css vào dòng trong thẻ mở .
+    Sau mỗi thuộc tính là 1 dấu ; sau đó viết tiếp thuộc tính khác
+    -->
+    
+</body>
+</html>

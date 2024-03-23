@@ -1,0 +1,25 @@
+/* Lớp giả */
+:root {
+    --text-color: red;
+}
+/*
+    Sử dụng lớp giả :root gọi là Global (Toàn cục), khi đặt biến ta có thể sử dụng CSS ở mọi nơi trong file
+    Còn theo dạng Local (Sử dụng luôn trong selector cụ thể) (Cục bộ) chứ không thể sử dụng trong toàn bộ tất cả cá file html được css .
+*/
+h1 {
+    color: var(--my-color-fv);
+    --my-color-fv: black;
+}
+/*
+    Do khi ta  CSS nhiều nơi, nếu ta CSS từng chỗ trong code mà sau này đổi ý muốn Css nhiều cái này thành nhiều cái khác .
+    Thay vì phải đi nhiều chỗ để sửa 1 chút thì ta có thể sử dụng biến ảo này để sửa hàng loạt thuộc tính CSS
+    VD như cả trang web của tôi có một số chỗ màu chủ đoạ là cam, tuy nhiên tôi lại muốn màu chủ đạo cả website này của mình chuyển sang màu xanh,
+    Khi đó tôi sử dụng tới biến ảo CSS .
+    Ta có thể sử dụng biến ảo truyền vào trong CSS  đó 
+*/
+h2 {
+    color: var(--text-color);
+}
+h3 {
+    color: var(--text-color);
+}

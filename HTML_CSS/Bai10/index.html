@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors ?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CSS Selectors là gì ?</h1>
+    <p>CSS Selectors hiểu đơn giản là gọi đến các phần tử(ELEMENTS) trong thẻ html viết CSS</p>
+    <div>
+        <span>ID & Class in HTML-CSS</span>
+        <ol>
+            <li>ID <=> # </li>
+            <li>Class <=> . </li>
+        </ol>
+        <!-- 
+        Trong 1 tài liệu không được phép đặt 2 tên id giống nhau
+        Đặt thì vẫn chạy tuy nhiên không hợp lệ vì nó ảnh hưởng tới các thẻ khác,
+        Đặc biệt là khi dùng JS, nếu ta muốn select id mà lại có id trùng nhau thì sẽ gây ra lỗi>
+        Đã là id thì name bắt buộc phải khác nhau, đó cũng là ý nghĩa của thuộc tính này .
+        -->
+        <h2 id="first-heading">ID</h2>
+        <h2 id="second-heading">ID</h2>
+
+        <h2 class="first-heading">CLASS</h2>
+        <h2 class="first-heading">CLASS</h2>
+        <!-- 
+            Nếu ta muốn sử dụng 1 thuộc tính css chung cho các đối tượng khác nhau
+            thì Class sinh ra để làm điều đó .
+        -->
+    </div>
+
+</body>
+</html>

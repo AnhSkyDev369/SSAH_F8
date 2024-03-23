@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- <style>
+        h2{
+            color: bisque;
+        }
+        /* 
+            Tagname {
+                1 điểm - Bisque
+            }
+        */ 
+    -->
+    <style>
+        h3.heading-class#heading-id{
+            color: red;
+        } 
+        
+        .heading-class#heading-id{
+            color: orange;
+        }
+
+       
+        #heading-id {    
+            color: burlywood;
+        }
+       
+        h3{
+            color: green;
+        }
+    </style>
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="color: red;">Priority là gì ?</h1>
+        <!-- Inline - 1000 -->
+        <br>
+        <ol>
+            <li>Internal, External ?</li>
+            <li>Inline - 1000</li>
+            <li>#id - 100</li>
+            <li>.class - 10</li>
+            <li>.tag - 1</li>
+            <li>Equal specificity ?</li>
+            <li>Universal selector and interherited ?</li>
+        </ol>
+    </div>
+    <!-- 1. Internal, External -->
+    <!-- 
+        Cách sủ dụng Internal và External , ai ưu tiên hơn ?
+        -Thực tế là không có cách nào ưu tiên hơn cách nào, 
+        chỉ có thằng nào gọi sau thì hiểu là mới hơn và được ưu tiên .
+    -->
+    <!-- vd, ở thẻ h1 đang sử dụng External để liên kết css và css thẻ h1 có color là màu cam, đc gọi đầu tiên
+        Tuy nhiên, tiếp đó , ta tiến hành sử dụng 1 cách css khác cho thẻ h1 bằng cách Inline như sau (1)
+    -->
+
+    <!-- 
+        2. Chấm điểm cho các phương pháp
+        Inline - 1000 điểm
+        #id - 100 điểm
+        .class - 10 điểm
+        tag - 1 điểm
+        Cách nào nhiều điểm hơn sẽ được ưu tiên hơn.
+        Với cách này không quan tâm mới hơn sẽ được ưu tiên mà cái nào điểm nhiều hơn sẽ được ưu tiên .
+        Tuy nhiên, nếu mới hơn mà ít điểm hơn thì như cũ, còn mới hơn mà nhiều điểm hơn cái cũ thì sẽ được áp dụng.
+    -->
+    <h2 class="dev" id="dev" style="color: forestgreen;">Developer</h2>
+    <!-- Inline 100 điểm - ForestGreen -->
+    <!-- ID -100 điểm - Brown -->
+    <!-- Class - 10 điểm - Blue -->
+
+
+    <!--
+        3.Sự giống nhau khi gọi (selected) tới elements 
+        Khi giống nhau về cách gọi các elements, thì elements nào css mới hơn thì ưu tiên hơn
+
+        1 đối tượng mà có cả #id và .class thì ta có thể selected như sau:
+        VD: Ta có thể h3, sử dụng tagname để css sang màu gold, tagname có điểm số là 1.
+        Sau đó, ta sẽ sử dụng class và id để so sánh với id , css và so sánh như sau:
+
+        Kết quả: 
+        1).Đối với riêng .class = "heading-class" khi css có số điểm là 10
+        Hiện ra màu \Red.
+        2. Đối với .class="heading-class" và id = "heading-id", ta có 10 điểm của class cộng với 100 điểm của id = 110 điểm sẽ lớn hơn (1).
+        Hiện ra màu  Blue
+
+        Vậy chỉ cần cộng điểm của In,#id,.class,tag, cái nào điểm cao hơn sẽ ưu tiên mưới hơn và áp dụng
+        mà không quan trọng vị trí code của câu lệnh trên hay dưới .
+        
+        Sử dụng dấu phẩy để ngăn cách khi ta muốn gọi đối tượng qua cả class và id
+    -->
+    <h3 id="heading-id" class="heading-class"  >Hello, World</h3>
+     
+    <!-- 
+        4. Phổ cập chung CSS (Selector) 
+        * {}
+        Khi ta viết  ra 1 thẻ * selected, các thẻ, elements nằm trong file được nhúng file css có chứa * sẽ 
+        được thừa hưởng tất cả những gì chúng ta viết vào, giống hệt nhau .
+        Universal có điểm là 0, vì vậy mà ta có thể dễ dàng thay đổi css cho các thẻ, elements .
+    -->
+
+    <!-- 
+        5. Phổ cập chung CSS (Inherited) hay Kế thừa.
+
+        /* 
+            Inherited có điểm là 0, vì vậy mà ta có thể dễ dàng thay đổi css cho các thẻ, elements .
+        */
+    -->
+
+    
+</body>
+</html>

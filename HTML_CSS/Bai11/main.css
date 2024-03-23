@@ -1,0 +1,37 @@
+h1 {
+    color: orange;
+}
+/* 
+ĐÂY CHÍNH LÀ TAGNAME
+ */
+#id-heading {
+    color: aquamarine;
+ }
+.dev {
+    color: blue;
+ }
+ #dev {
+    color: brown;
+ }
+
+
+ /* 
+    Selector có điểm là 0, vì vậy mà ta có thể dễ dàng thay đổi css cho các thẻ, elements .
+
+ */
+ *{
+    background-color: aliceblue ;
+    /* color: lightcoral !important; */
+ }
+
+ html {
+    color: violet;
+ }
+ /* 
+    Inherited có điểm là 0, vì vậy mà ta có thể dễ dàng thay đổi css cho các thẻ, elements .
+ */
+
+/* 
+   Sử dụng !important sẽ được đặc biệt ưu tiên css vì điểm của nó lớn hơn cả 1000 .
+   Nếu tất cả đều là !important, ta lại quay về xét điểm .
+*/

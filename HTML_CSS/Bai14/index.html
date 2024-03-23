@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding CSS</title>
+
+    <style>
+        /* .box1{
+            background-color: black;
+            width: 50px;
+            height: 50px;
+            color: white;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .box2{
+            background-color: orange;
+            width: 50px;
+            height: 50px;
+            color: white;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        .box3 {
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            color: white;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        } */
+
+        .box {
+            width: 60px;
+            height: 60px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box1 {
+            background-color: black;
+        }
+        .box2 {
+            background-color: orange;
+        }
+        .box3 {
+            background-color: red;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding: 50px;
+        }
+        /* 
+            Nếu chỉ có 1 giá trị padding truyền vào, thì trong 
+            computed sẽ áp dụng cả 4 hướng.
+            Nếu trong padding có 2 giá trị thì giá trị thứ nhất của padding sẽ áp dụng cho
+            2 hướng là top và bottom, giá trị thứ 2 sẽ áp dụng cho left and right .
+            Nếu 3 tham số thì giá trị đầu tiên là top, giá trị thứ 2 là left and right giá trị 3 là bottom
+            Nếu có 4 tham số thì gt1 là top, gt2 là right, gt3 là btm, gt4 là left
+            Padding 4 giá trị nhớ theo chiều kim đồng hồ .
+        
+        */
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Padding CSS Là Gì ?</h1>
+        <p>
+            Sơ đồ biểu diễn dạng khối cho tất cả elements nằm trong file html
+            Sử dụng Computed để xem sơ đồ khối trong devtools
+        </p>
+        <h2>Padding là lớp đệm.</h2>
+        <p>Computed có 4 lớp lần lượt từ trong ra ngoài là lớp
+            content,padding,border,margin.
+        </p>
+        <p>
+            Padding-top và padding bottom sẽ cộng giá trị px
+            cho height .
+        </p>
+        <p>
+            Padding-left và padding-right sẽ cộng giá trị px
+            cho width .
+        </p>
+        <br>
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </div>
+</body>
+</html>

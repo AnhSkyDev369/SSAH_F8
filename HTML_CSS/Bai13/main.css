@@ -1,0 +1,51 @@
+*{
+    background-color: azure;
+}
+h1 {
+    color: blue;
+}
+/* px */
+.box { 
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+}
+/* .box {
+    //%
+    background-color: red;
+    width: 70%;
+    height: 100px;
+} */
+/* 
+    color: màu chữ
+    background-color: màu nền
+    width: chiều ngang
+    heighrL: chiều dọc
+    font-size: cỡ chữ
+*/
+
+/* 
+    Tất cả đơn vị ở bên giá trị tương đối đều sẽ cần 1 nơi để phụ thuộc giá trị vào
+    Tức là phụ thuộc vào thẻ chứa nó.
+*/
+/*
+    Ở đây ta có thẻ div nằm trong thẻ body, thẻ body kế thừa lại chiều ngang của trình duyệt
+    Nên kích thước chiều ngang của thẻ body bằng kích thước chiều ngang của trình duyệt .
+
+    Ở đây ta có thẻ width = 50 % tức là sẽ phụ thuộc vào 50 % kích thước chiều ngang của thẻ body
+    thẻ body lại kế thừa 100 % độ dài của trình duyệt => thẻ width chiếm 1 nửa của trình duyệt 
+    thông qua thẻ  div.
+
+    Khi ta định nghĩa 1 đối tượng sử dụng giá trị tương đối, đơn vị tương đối, thì đối tượng đó
+    sẽ sở hữu 1 đơn vị, giá trị tương đối và sẽ dễ dàng bị thay đổi kt khi đối tượng phụ thuộc thay đổi .
+*/
+
+
+/*
+    Đối với Rem, sẽ phụ thuộc giá trị được định nghĩa ở thẻ html vào thẻ html
+    Giá trị ở html là gì thì rem sẽ được định nghĩa như vậy .
+    Giá trị của html là 30px đi chẳng hạn thì khi đó 30px sẽ được định nghĩa = 1 rem, và nếu 2 rem sẽ = 60px, cứ như thế,... 
+*/
+/* 
+    Đối với Em thì sẽ phụ thuộc vào thẻ gần nhất chứa nó có thuộc tính font size.
+*/
