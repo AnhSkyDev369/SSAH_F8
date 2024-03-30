@@ -23,17 +23,19 @@ var c = 2;
 //  Biểu thức điều kiện if_else
 if (b == c) {
     console.log("Đúng");
+}else {
+    console.log('Sai');
 }
 
 //  Nếu (điều kiện đúng) {
 //  Đoạn code bên trong sẽ được thực thi
-//}
+//} Nếu điều kiện sai, đoạn code sẽ thực thi else
 
-//  Toán tử so sánh sẽ là >,<,>=, <=, == (sử dụng 2 dấu = = sẽ giống với dấu bằng trogn toán tử so sánh thay vì 1 dấu =)
-//  Nếu sử dụng 1 dấu = sẽ trùng với toán tử gán.
+//  Toán tử so sánh sẽ là >,<,>=, <=, == (sử dụng 2 dấu = = sẽ giống với dấu bằng trong toán tử so sánh thay vì 1 dấu =)
+//  Nếu sử dụng 1 dấu = sẽ trùng với toán tử  GÁN.
 
 //4.
-// && thay cho dấu và trong câu điều kiện, và cả 2 biểu thức trong câu điều kiện được so sánh thông
+// && thay cho dấu VÀ trong câu điều kiện, và cả 2 biểu thức trong câu điều kiện được so sánh thông
 //  qua toán tử logic && mà đúng thì mới thực hiện chức năng trong đoạn code bên dưới dấu {}.
 
 //  Nếu 1 trong 2 vế hoặc cả 2 vế biểu thức đều sai thì đoạn code bên trong {} sẽ không thực hiên .
@@ -41,6 +43,8 @@ if (b == c) {
 var d = 1;
 var e = 2;
 
-if ( d < e && e < d) {
+if ( d < e && e > d) {
     alert("So sánh đúng");
+} else {
+    alert('So sánh sai');
 }

@@ -54,21 +54,23 @@ console.log('Kết quả của phép giảm 1 giá trị số là: ', bien2);
 
 //VD: 
 // Dù viết ở trước hay sau biến thì cviệc của phép tăng/giảm vẫn cho ra kết quả như nhau
-//, tuy nhiên vẫn có sự khác nhau .
+//, tuy nhiên vẫn có sự khác nhau về giá trị trả về.
 
-//++a => Trả về giá trị a sau khi + 1
-//a++ => Trả về giá trị a trước khi + 1
+//  ++a => Trả về giá trị a sau khi + 1
+//  a++ => Trả về giá trị a trước khi + 1
 
+//  --a => Trả về giá trị a sau khi - 1
+//  a-- => Trả vê giá trị a trước khi -1
 
 var biena = 6;
 // ++biena;
 // console.log(biena);
 
 var outputt = ++biena;
-console.log('Trả về giá trị biến a sau khi cộng 1: ', outputt);
 //Việc 1: + 1 cho biena, biena = biena + 1 = 7 => biena = 7
 console.log("Biến a hiện tại: ",biena);
 //Việc 2: Trả về a sau khi được cộng 1 là 7.
+console.log('Trả về giá trị biến a sau khi cộng 1: ', outputt);
 
 
 var bienb = 6;
@@ -76,29 +78,29 @@ var bienb = 6;
 // console.log(bienb);
 
 var output = --bienb;
-console.log('Trả về biến b sau khi trừ 1: ', output);
-//Việc 1: - 1 cho biena, biena = biena - 1 = 5 => biena = 5
+
+//Việc 1: - 1 cho biena, biena = biena - 1 = 6 - 1 = 5 => biena = 5
 console.log('Biến b hiện tại: ', bienb);
 //Việc 2: Trả về biena sau khi được trừ 1  là 5.
-
+console.log('Trả về biến b sau khi trừ 1: ', output);
 
 var bienc = 9;
 var output = bienc++;
+
 // Việc 1: 'bienc sẽ copy chính giá trị của nó hay bienc = 9, copy ra 9.
-
-
 // Việc 2: Cộng 1 của bienc: bienc = bienc + 1 = 9 + 1 = 10; (2)
-console.log("Trả về giá trị biến c trước khi cộng 1:", output);
-// Việc 3: Trả về bienc = 9 được copy;(3)
 console.log('Biến c hiện tại : ', bienc);
-
-
+// Việc 3: Trả về bienc = 9 được copy;(3)
+console.log("Trả về giá trị biến c trước khi cộng 1:", output);
+//  Nói cách khác : Trả trước cộng sau
 
 var biend = 10;
 var output = biend--;
+
+console.log('Biến d hiện tại : ', biend);
 //10 - 1 = 9
 console.log('Trả về biến d trước khi trừ 1:' , output);
-console.log('Biến d hiện tại : ', biend);
+//  Nói cách khác : Trả trước trừ sau
 
 
 var number = 6;

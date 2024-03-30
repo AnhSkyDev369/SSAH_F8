@@ -1,5 +1,5 @@
 // Hàm alert();In ra cửa sổ popup thông báo
-//alert('Hi, Nguyễn Thế Anh');
+alert('Hi, Nguyễn Thế Anh');
 
 //var là viết tắt của variable
 //Kí tự đầu tiên khi tạo biến phải bắt đầu bằng chữ hoặc dấu gạch, sau đó là số hoặc kí tự, và viết thường các chữ đầu của tên biến, ngay sau đó là viết hoa.

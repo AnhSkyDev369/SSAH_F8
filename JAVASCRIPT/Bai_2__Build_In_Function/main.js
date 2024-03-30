@@ -11,20 +11,20 @@ console.log(funcBuildIn);
  */
 
 //1.
-//console.log('Đây là thông báo');// In ra thông báo
-//console.warn(123); // In ra cảnh báo
-//console.error(2.5);// In ra lỗi
+console.log('Đây là thông báo');// In ra thông báo
+console.warn(123); // In ra cảnh báo
+console.error(2.5);// In ra lỗi
 //console.clear();// Xoá sạch các giá trị console cũ
 
 //2.
-//confirm('Xác nhận bạn đủ 18+'); //Hàm confirm tạo ra hộp thoại xác nhận gồm Ok và huỷ
-//prompt('Nhập vào tuổi của bạn'); // Hàm prompt sẽ tạo ra ô input để nhập giá trị vào và bấm xác nhận Ok hoặc huỷ.
+confirm('Xác nhận bạn đủ 18+'); //Hàm confirm tạo ra hộp thoại xác nhận gồm Ok và huỷ
+prompt('Nhập vào tuổi của bạn'); // Hàm prompt sẽ tạo ra ô input để nhập giá trị vào và bấm xác nhận Ok hoặc huỷ.
 
 //3.
-// var thoiGian = "8 giờ sáng";
-// setTimeout(function() {
-//     alert(thoiGian);
-// }, 1000);   
+var thoiGian = "8 giờ sáng";
+setTimeout(function() {
+    alert(thoiGian);
+}, 1000);   
 
 //  Hàm setTimeOut là cho 1 đoạn code sẽ chạy sau 1 khoảng thời gian nhất định, và khoảng thời gian này tính bằng mili/s
 //  1000 mili/s = 1s
